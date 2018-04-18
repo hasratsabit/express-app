@@ -51,6 +51,13 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/projects', (req, res) => {
+    res.render('project', {
+        title: 'Project Page',
+        message: 'Welcome to Projects Page'
+    })
+})
+
 
 
 let port = process.env.PORT || 8080;
